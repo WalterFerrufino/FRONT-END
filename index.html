@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Walter Manuel Ferrufino">
+    <title>Portfolio | Walter Manuel Ferrufino</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://raw.githubusercontent.com/WalterFerrufino/IMG-para-el-TPIntegrador/main/IMG/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/861f8a35f6.js" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</head>
+<body>
+    
+    <div id="inicio" ></div>
+    <nav class="nav">
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item"> <a href="#inicio" class="nav-link"> <b>Inicio</b> </a></li>
+                <li class="nav-item"> <a href="#sobremi" class="nav-link"> <b>Sobre mí</b> </a></li>
+                <li class="nav-item"> <a href="#habilidades" class="nav-link"> <b>Habilidades</b> </a></li>
+                <li class="nav-item"> <a href="#contacto" class="nav-link"> <b>Contacto</b> </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="iconos-header">
+            <div class="logoap">  <img src="https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/AP.png?raw=true"></div>
+            <div class="logolinkedin-container">
+                <a id="logo-linkedin" href="https://www.linkedin.com/in/walter-ferrufino/" target="_blank"><img src="https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/logolinkedin.png?raw=true" alt="LinkedIn"></a>
+            </div>
+            
+            <form action="" class="formulario-login">
+                <div class="login-btn">
+                    <button id="login-button" type="button" class="btn btn-link">Login</button>
+                    <input type="text" class="login" id="login-usuario" placeholder="Usuario">
+                    <input type="password" class="login" id="login-contraseña" placeholder="Contraseña">
+                </div>
+            </form>
+        </div>
+
+        <section class="banner">
+            <div class="banner-content">
+                <h1>Walter Manuel Ferrufino</h1>
+            </div>
+        </section>
+    </header>    
+    
+    <section class="inicio">
+        <img src="https://github.com/WalterFerrufino/IMG-para-el-TPIntegrador/blob/main/IMG/perfil.jpg?raw=true" id="profile-picture" alt="Walter Manuel Ferrufino" title="Foto de Walter Manuel Ferrufino - Full Stack Web Develloper">        
+        <h2>Walter Manuel Ferrufino</h2>
+        <h1 class="sub-h1">Full Stack Web Develloper</h1>
+    </section>
+   
+    <section id="sobremi" class="sobremi">
+        <br>
+        <br>
+        <br>
+        <div class="presentacion">
+            <h3>Presentacón</h3 id="presentacion">
+            <h2>Acerca de mí</h2>
+            <p id="text-sobremi">Hola, soy Walter Manuel Ferrufino y con mi formación como Full Satck Web Develloper poseo todas las habilidades necesarias para la creación y diseño de su sitio web.</p>
+        </div>
+
+        <div class="btn-edit-sobremi">
+            <div class="btn-edit" onclick="cambiar_parrafo()">
+                <a href="#sobremi" class="btn-rigth">
+                    <i class="fa fa-pen" id="pen"></i>
+                </a>    
+            </div>
+            <div>
+                <input id="edit-sobremi" type="text" oninput="myFunction2(this.value)" style="display:none">
+            </div>
+            
+            <script>
+                let textarea=document.getElementById("edit-sobremi")
+                textarea.addEventListener('keyup', (e) => {
+                if (e.key=="Enter"){
+                document.getElementById("edit-sobremi").style.display="none"}});
+            </script>
+        </div>
+
+        <div class="container">
+            
+            <div class="row row-cols-2">
+              <div class="col1">
+                <div>
+                    <p id="info">Información</p>
+                </div>
+                <div>
+                    <p>Walter Manuel Ferrufino</p>
+                </div>
+                <div>
+                    <p>(011)68017126</p>
+                </div>
+                <div>
+                    <p>fmwalter@hotmail.com</p>                
+                </div>
+              </div>
+              <div class="col1">
+                <div>
+                    <p id="exp">Experiencia</p>
+                    <p>Programa Argentina #YoProgramo</p>
+                    <p>Finalizado y aprobado</p>
+                </div>
+                <div>
+                    <p>Soporte en línea 24/7</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div id="habilidades" class="columns-divisor">
+            <p class="hab1">¿Por qué elegirme?</p>
+            <p class="hab2">Mi area de experiencia:</p>
+        </div>
+
+          <div class="container">
+            <div class="row row-cols-2">
+              <div class="col2">
+                <div class="frontend">
+                    <p class="fend"><u><b>FRONTEND:</b></u></p>
+                    <p>HTML5</p>
+                    <p>CSS</p>
+                    <p>JSON</p>
+                    <p>BOOTSTRAP</p>
+                    <p>JAVASCRIPT</p>
+                    <p>ANGULAR</p>
+                </div>
+              </div>
+              <div class="col2">
+                <div class="backend">
+                    <p class="bend"><u><b>BACKEND:</b></u></p>
+                    <p>JAVA</p>  
+                    <p>MySQL</p>
+                    <p>JAVA WEB</p>
+                    <p>SPRING BOOT</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    
+    
+        <div class="extras">
+            <p class="title-extras">Aptitudes extras</p>
+            <p>Buen nivel de inglés hablado y escrito</p>
+            <p>Básico nivel de francés hablado y escrito</p>
+            <p>Profesionalismo</p>
+            <p>Seriedad</p>
+        </div>
+    
+    <section id="contacto" class="contacto">
+        
+        <br>
+        <br>
+        <br>
+        
+        <h2>Contacto</h2>
+        <form action="#" class="contact-form">
+            <div class="contact-inputs">
+                <p><input type="text" placeholder="Nombre" class="contact-input"></p>
+                <p><input type="mail" placeholder="Email" class="contact-input"></p>
+                <p><input type="text" placeholder="Asunto" class="contact-input"></p>
+            </div>
+
+            <div>
+                <textarea placeholder="Mensaje" name="" id="" cols="0" rows="10" class="contact-input"></textarea>
+            </div>
+
+            <p><input type="submit" value="Enviar mensaje" class="contact-button" id="contact-button"></p>
+        </form>
+    </section>
+
+    <footer>
+        <h2 id="footer-name">Walter Manuel Ferrufino</h2>
+        <h3 id="footer-subname">Full Stack Web Develloper</h3>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
